@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    background-color: #E5E5E5;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acordeon{
+    width: 655px;
+    min-height: 347px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.acordeon .ilustration{
+    position: absolute;
+    left: -90px;
+}
+
+.acordeon .FAQ{
+    width: 90%;
+    padding-left: 235px;
+}
+
+.acordeon .FAQ h1{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 14px;
+}
+
+.acordeon .doubts .doubt{
+    cursor: pointer;
+    background-image: url(../images/triangle-down-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0px;
+}
+.acordeon .doubts .doubt:last-child{
+    border: 0;
+}
+
+
+.acordeon .doubts .doubt h2{
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    font-size: 17px;
+    font-weight: 500;
+    width: 90%;
+}
+
+.acordeon .doubts .doubt .question:hover{
+    color: #f47c57;
+}
+
+.answer{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #f47c57;
+}
+
+/* Activated Styles */
+
+.acordeon .doubts .doubt.activated h2{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.acordeon .doubts .doubt.activated .answer{
+    display: block;
+}
+
+.acordeon .doubts .doubt.activated{
+    background-image: url(../images/triangle-down-red.svg);
+}
+
+
